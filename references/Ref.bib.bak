@@ -1,0 +1,65 @@
+% Encoding: UTF-8
+
+@InProceedings{ramos2017detecting,
+  author       = {Ramos, Sebastian and Gehrig, Stefan and Pinggera, Peter and Franke, Uwe and Rother, Carsten},
+  booktitle    = {2017 IEEE Intelligent Vehicles Symposium (IV)},
+  title        = {Detecting unexpected obstacles for self-driving cars: Fusing deep learning and geometric modeling},
+  year         = {2017},
+  organization = {IEEE},
+  pages        = {1025--1032},
+  file         = {:Detecting Unexpected Obstacles for Self-Driving Cars- Fusing Deep Learning and Geometric Modeling.pdf:PDF},
+  journal      = {IEEE Intelligent Vehicles Symposium},
+  keywords     = {rank5, prio2},
+  priority     = {prio2},
+  ranking      = {rank5},
+}
+
+@Article{dairi2018unsupervised,
+  author    = {Dairi, Abdelkader and Harrou, Fouzi and Senouci, Mohamed and Sun, Ying},
+  journal   = {Robotics and Autonomous Systems},
+  title     = {Unsupervised obstacle detection in driving environments using deep-learning-based stereovision},
+  year      = {2018},
+  pages     = {287--301},
+  volume    = {100},
+  file      = {:Unsupervised obstacle detection in driving environments using deep-learning-based stereovision.pdf:PDF},
+  keywords  = {prio2, rank5},
+  priority  = {prio2},
+  publisher = {Elsevier},
+  ranking   = {rank5},
+}
+
+@Article{魏彤2017基于边界跟踪的高实时性盲道识别算法,
+  author   = {魏彤 and 袁磊 and others},
+  journal  = {光电工程},
+  title    = {基于边界跟踪的高实时性盲道识别算法},
+  year     = {2017},
+  number   = {7},
+  pages    = {676--684},
+  volume   = {44},
+  file     = {:基于边界跟踪的高实时性盲道识别算法.pdf:PDF},
+  keywords = {rank4, prio1},
+  priority = {prio1},
+  ranking  = {rank4},
+}
+
+@Article{魏彤2019基于机器学习识别与标记分水岭分割的盲道图像定位,
+  author   = {魏彤 and 周银鹤 and others},
+  journal  = {光学精密工程},
+  title    = {基于机器学习识别与标记分水岭分割的盲道图像定位},
+  year     = {2019},
+  number   = {1},
+  pages    = {201--210},
+  volume   = {27},
+  file     = {:基于机器学习识别与标记分水岭分割的盲道图像定位_魏彤.pdf:PDF},
+  keywords = {prio1, rank4},
+  priority = {prio1},
+  ranking  = {rank4},
+}
+
+@Article{,
+}
+
+@Article{,
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
