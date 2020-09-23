@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+<html align="left">
+<h1>Train output</h1>
+    <body>
+    <h2>model: {{ model }}</h2>
+    <p>train images: {{ train_img }}&nbsp;&nbsp;validation images : {{ validation_img }}&nbsp;&nbsp;
+        train/validation rate : {{ tv_rate }}</p>
+    <p>original paper : <a href={{ paper_url }}> {{ paper_name }} </a> &nbsp;&nbsp;
+    <p>code : <a href={{ code_url }}> {{ code_url }} </a ></p>
+    <p>mIoU : {{ mIoU }}&nbsp;&nbsp;mDSC : {{ mDSC }}&nbsp;&nbsp;
+        loss: {{ loss }}&nbsp;&nbsp; training time : {{ train_time }}</p>
+    <h2>Images</h2>
+    <table border="1" width = "40%" cellspacing="5" cellpadding="5" align="left">
+    <tr>
+        <th>ImageID</th>
+        <th>Image</th>
+        <th>Label</th>
+        <th>loss</th>
+        <th>IoU</th>
+        <th>DSC</th>
+    </tr>
+
+    {% for image in images %}
+    <tr align="center">
+        <td>{{ image.imageID }}</td>
+        <td> <img src={{ image.image }} height="128"> </td>
+        <td> <img src={{ image.label }} height="128"> </td>
+        <td>{{ image.loss }}</td>
+        <td>{{ image.IoU }}</td>
+        <td>{{ image.DSC }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    </body>
+</html>
+
