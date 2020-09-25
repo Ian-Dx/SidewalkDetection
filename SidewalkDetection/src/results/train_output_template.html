@@ -9,28 +9,7 @@
     <p>code : <a href={{ code_url }}> {{ code_url }} </a ></p>
     <p>mIoU : {{ mIoU }}&nbsp;&nbsp;mDSC : {{ mDSC }}&nbsp;&nbsp;
         loss: {{ loss }}&nbsp;&nbsp; training time : {{ train_time }}</p>
-    <h2>Images</h2>
-    <table border="1" width = "40%" cellspacing="5" cellpadding="5" align="left">
-    <tr>
-        <th>ImageID</th>
-        <th>Image</th>
-        <th>Label</th>
-        <th>loss</th>
-        <th>IoU</th>
-        <th>DSC</th>
-    </tr>
-
-    {% for image in images %}
-    <tr align="center">
-        <td>{{ image.imageID }}</td>
-        <td> <img src={{ image.image }} height="128"> </td>
-        <td> <img src={{ image.label }} height="128"> </td>
-        <td>{{ image.loss }}</td>
-        <td>{{ image.IoU }}</td>
-        <td>{{ image.DSC }}</td>
-    </tr>
-    {% endfor %}
-    </table>
+    <a href="images_output_template.html">Images Output</a>
     </body>
 </html>
 

@@ -38,19 +38,24 @@ def html_gene(
             mIoU=mIoU,
             mDSC=mDSC,
             loss=loss,
-            train_time=train_time,
+            train_time=train_time
+        )
+        out_html.write(html_content)
+
+    template = env.get_template("images_output_template.html")
+    with open("results/images_output.html", "w+") as out_html:
+        html_content = template.render(
             images=images
         )
         out_html.write(html_content)
 
 
-def image_gene(imageID, image, label, loss, IoU, DSC):
+def image_gene(imageID, image, label, IoU, DSC):
     """
     Generate a image row
     :param imageID:
     :param image:
     :param label:
-    :param loss:
     :param IoU:
     :param DSC:
     :return:
@@ -59,7 +64,6 @@ def image_gene(imageID, image, label, loss, IoU, DSC):
         "imageID": imageID,
         "image": image,
         "label": label,
-        "loss": loss,
         "IoU": IoU,
         "DSC": DSC
     }
@@ -71,9 +75,8 @@ def densASPP_test():
         "000001",
         "../resources/data/aachen_000000_000019_leftImg8bit.png",
         "../resources/target/aachen_000000_000019_gtFine_color.png",
-        12,
-        "80%",
-        "78%"
+        "70%",
+        "80%"
     )
     images.append(image)
     html_gene(
@@ -81,7 +84,8 @@ def densASPP_test():
         3000,
         2000,
         1.5,
-        "https://github.com/Ian-Dx/SidewalkDetection/blob/master/references/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.pdf",
+        "https://github.com/Ian-Dx/SidewalkDetection/blob/"
+        "master/references/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.pdf",
         "DenseASPP for Semantic Segmentation in Street Scenes",
         "https://github.com/Ian-Dx/SidewalkDetection/tree/master/SidewalkDetection",
         "85%",

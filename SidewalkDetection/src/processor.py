@@ -64,20 +64,37 @@ def data_reader(dir_path):
     """
     # State an empty array to hold data
     data = []
+    dirs = []
+    imgs = []
 
-    # List all the files in the given directory
-    for file in os.listdir(dir_path):
-        # Make sure the file is a png image
-        if os.path.splitext(file)[1] == ".png":
-            # Data add new item
-            img_path = dir_path + file
-            data.append(data_reader_single(img_path))
+    # List all the directories in the given directory
+    for directory in os.listdir(dir_path):
+        dirs.append(directory)
+
+    # Keep dirs in order
+    dirs.sort()
+
+    for directory in dirs:
+        # List all the files in the given directory
+        for file in os.listdir(directory):
+            # Make sure the file is a png image
+            if (os.path.splitext(file)[1] == ".png") & (file.startswith(".") == False):
+                # Data add new item
+                img_path = dir_path + file
+                imgs.append(img_path)
+                print(img_path)
+
+    # Keep images in order
+    imgs.sort()
+
+    for img in imgs:
+        data.append(data_reader_single(img))
 
     # Convert to tensor
     data = np.array(data)
     data = torch.from_numpy(data).type(torch.FloatTensor)
 
-    return data
+    return data, imgs
 
 
 def target_reader(dir_path):
@@ -88,20 +105,36 @@ def target_reader(dir_path):
     """
     # State an empty array to hold targets
     target = []
+    dirs = []
+    imgs = []
 
-    # List all the files in the given directory
-    for file in os.listdir(dir_path):
-        # Make sure the file is a png image
-        if os.path.splitext(file)[1] == ".png":
-            # Targets add new item
-            img_path = dir_path + file
-            target.append(target_reader_single(img_path))
+    # List all the directories in the given directory
+    for directory in os.listdir(dir_path):
+        dirs.append(directory)
+
+    # Keep dirs in order
+    dirs.sort()
+
+    for directory in dirs:
+        # List all the files in the given directory
+        for file in os.listdir(directory):
+            # Make sure the file is a png image
+            if file.endswith("color.png") & (file.startswith(".") == False):
+                # Targets add new item
+                img_path = dir_path + file
+                imgs.append(img_path)
+
+    # Keep images in order
+    imgs.sort()
+
+    for img in imgs:
+        target.append(target_reader_single(img))
 
     # Convert to tensor
     target = np.array(target)
     target = torch.from_numpy(target).type(torch.LongTensor)
 
-    return target
+    return target, imgs
 
 
 def main():
@@ -111,8 +144,8 @@ def main():
     """
     # The average time to read both data and target once is around 0.25s
     time1 = time.time()
-    data_reader_single("/Users/IanDXSSXX/Downloads/1.png")
-    target_reader_single("/Users/IanDXSSXX/Downloads/1.png")
+    # target_reader("/Volumes/Files/SidewalkDetection/gtFine/train/aachen/")
+    data_reader("/Volumes/Files/SidewalkDetection/leftImg8bit/train/aachen/")
     time2 = time.time()
     print(time2-time1)
 
