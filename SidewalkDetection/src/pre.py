@@ -1,4 +1,4 @@
-""" The training step """
+""" Check if this is working """
 from torch.utils.data import TensorDataset, DataLoader
 from nnModel.DenseASPP import DenseASPP
 from processor import *
@@ -9,14 +9,14 @@ from torch.utils.tensorboard import SummaryWriter
 # Hyper parameters
 
 # ** Set dataset path **
-TRAIN_DATA_PATH = ""
-TRAIN_TARGET_PATH = ""
+TRAIN_DATA_PATH = "./resources/data"
+TRAIN_TARGET_PATH = "./resources/target"
 VALIDATION_DATA_PATH = ""
 VALIDATION_TARGET_PATH = ""
 TEST_DATA_PATH = ""
 TEST_TARGET_PATH = ""
 
-EPOCHS = 80
+EPOCHS = 1
 
 
 def train():
@@ -47,7 +47,7 @@ def train():
     dataset = TensorDataset(train_data, train_target)
     data_loader = DataLoader(
         dataset=dataset,
-        batch_size=8,
+        batch_size=1,
         shuffle=True
     )
 
@@ -60,6 +60,7 @@ def train():
 
     # Log
     writer = SummaryWriter(log_dir="logs")
+    print("-" * 10 + "Data loaded!" + "-" * 10)
 
     # Gpu
     if is_gpu:
@@ -81,12 +82,15 @@ def train():
             # Writer
             if idx % 10 == 0:
                 writer.add_scalar("Train loss", loss, idx // 10 + epoch * 38)
+                print("Loss {}".format(loss))
 
     # Save model
     if is_gpu:
         torch.save(model.modules, "DenseASPP_Model.pth")
     else:
         torch.save(model, "DenseASPP_Model")
+    # Log
+    print("-" * 10 + "Model saved!" + "-" * 10)
 
     # Get the output with probabilities
     val_output = model(val_data)
@@ -102,6 +106,8 @@ def train():
     dscs = np.array(list(map(lambda a: 2 * a / (a + 1), ious)))
     mdsc = np.mean(dscs)
 
+    # Log
+    print("mean IoU: {} | mean dsc: {}".format(miou, mdsc))
     # Time
     time2 = time.time()
 

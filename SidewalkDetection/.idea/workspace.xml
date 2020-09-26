@@ -20,14 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70c00c8f-e01d-419c-b4cc-c2fe2a061ed1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/IanDXSSXX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/IanDXSSXX.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html_gene.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/html_gene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/results/train_output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/results/train_output_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/results/train_output_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000001_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000002_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000003_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000004_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000005_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000006_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000007_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000008_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/data/aachen_000009_000019_leftImg8bit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000001_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000002_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000003_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000004_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000005_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000006_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000007_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000008_000019_gtFine_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/target/aachen_000009_000019_gtFine_color.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -59,6 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -157,6 +169,7 @@
       <workItem from="1600957491640" duration="436000" />
       <workItem from="1601012197639" duration="784000" />
       <workItem from="1601029734703" duration="12370000" />
+      <workItem from="1601076365955" duration="1629000" />
     </task>
     <servers />
   </component>
@@ -180,22 +193,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601049202394" />
-    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1601049331365">
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1601078751485">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601049331365" />
-    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1601049331364">
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601078751485" />
+    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1601078751484">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601049331364" />
-    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1601049331363">
+    <state width="1398" height="205" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601078751484" />
+    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1601078751484">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601049331363" />
-    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1601049331364">
+    <state width="1398" height="205" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601078751484" />
+    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1601078751485">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601049331364" />
+    <state width="1398" height="205" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601078751485" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1600825376418">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -205,6 +218,6 @@
     <SUITE FILE_PATH="coverage/SidewalkDetection$processor.coverage" NAME="processor Coverage Results" MODIFIED="1601041256501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/SidewalkDetection$file_reader.coverage" NAME="processor Coverage Results" MODIFIED="1600697205512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/SidewalkDetection$html_gene.coverage" NAME="html_gene Coverage Results" MODIFIED="1601037233651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/SidewalkDetection$train.coverage" NAME="train Coverage Results" MODIFIED="1601048157699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/SidewalkDetection$train.coverage" NAME="train Coverage Results" MODIFIED="1601078114446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
